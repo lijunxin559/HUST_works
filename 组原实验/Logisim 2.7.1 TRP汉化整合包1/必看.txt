@@ -1,0 +1,1 @@
+如果打开软件时显示语言为英文，那么请在工具栏找到windows，然后选择preference，在language栏找到“cn”并选择

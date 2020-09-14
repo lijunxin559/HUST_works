@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>coach_deal</class>
+ <widget class="QTabWidget" name="coach_deal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1250</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1250</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/new/prefix1/窗口图标.png</normaloff>:/new/prefix1/窗口图标.png</iconset>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;我的信息&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-size:24px;
+font-family:Century Gothic;
+
+}
+#tab_2{border-image: url(:/new/prefix1/背景10.png);}
+
+
+QTabBar::tab {
+		border: none;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+        border-top-color:black;
+		color: black;
+	    border-top:1px solid #ff0000;
+        border-left:1px solid #ff0000;
+
+		height: 120px;
+		min-width: 60px;
+		margin-right: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+}
+QTabBar::tab:hover {
+		background: rgb(0, 78, 161);
+}
+QTabBar::tab:selected {
+		color: white;
+		background: rgb(0, 78, 161);
+}
+#widget{border-image: url(:/new/prefix1/背景7.png);}
+#tab_3{border-image: url(:/new/prefix1/背景3.jpg);}
+</string>
+  </property>
+  <property name="tabPosition">
+   <enum>QTabWidget::West</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="currentIndex">
+   <number>2</number>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>16</width>
+    <height>16</height>
+   </size>
+  </property>
+  <property name="elideMode">
+   <enum>Qt::ElideNone</enum>
+  </property>
+  <widget class="QWidget" name="widget">
+   <attribute name="title">
+    <string>我的信息</string>
+   </attribute>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>150</y>
+      <width>451</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame{
+background:transparent;
+border-radius:15px;
+border:2px solid #000000;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>371</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>    姓名  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name">
+          <property name="styleSheet">
+           <string notr="true">
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>   性别</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton">
+          <property name="text">
+           <string> 男</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="text">
+           <string>女</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>   年龄  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBox"/>
+        </item>
+        <item>
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>   邮箱   </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_email">
+          <property name="styleSheet">
+           <string notr="true">
+border:2px groove gray;border-radius:10px;padding:2px 4px</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>修改密码</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_pwd">
+          <property name="styleSheet">
+           <string notr="true">
+border:2px groove gray;border-radius:10px;padding:2px 4px</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>确认密码</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_pwd1">
+          <property name="styleSheet">
+           <string notr="true">
+border:2px groove gray;border-radius:10px;padding:2px 4px</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+     </property>
+     <property name="text">
+      <string>确认完善</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tab_2">
+   <attribute name="title">
+    <string>预约情况</string>
+   </attribute>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>130</y>
+      <width>491</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>8</number>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>42</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>170</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>29</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>61</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tab_3">
+   <attribute name="title">
+    <string>时间安排  </string>
+   </attribute>
+   <widget class="QPushButton" name="pushButton_1_1">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>180</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>250</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>320</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_4">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>390</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_5">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>460</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_6">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>530</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_7">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>600</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>320</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_6">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>530</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_7">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>600</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_1">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>180</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>250</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_5">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>460</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>390</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>120</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> 今天</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> 明天</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>180</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[8:00-9:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>460</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[14:00-15:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>530</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[15:00-16:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>600</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[16:00-17:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[9:00-10:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>320</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[10:00-11:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>390</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[11:00-12:00]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>670</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[17:00-18:00]</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_1_8">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>670</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2_8">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>670</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+     background-color: qlineargradient(x1: 0, y1: 0, x2:    0, y2: 1,  stop: 0 #dadbde, stop: 1 #f6f7fa);
+
+border:2px groove gray;border-radius:10px;padding:2px 4px
+}
+
+QPushButton:hover
+{
+    /*背景颜色*/  
+  
+	background-color: rgb(159, 159, 159);
+}</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>1211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>20</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

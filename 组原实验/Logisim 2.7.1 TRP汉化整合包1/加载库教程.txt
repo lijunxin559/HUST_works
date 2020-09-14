@@ -1,0 +1,5 @@
+先在Logisim的工具栏那找到“项目”，选择里面的“加载库”，然后点击“JAR库”，之后找到整合包下的cs316.jar并打开
+
+接着在输入edu.cornell.cs316.Components 然后点确定
+
+目录下的toys.pdf为cs316库的相关教程

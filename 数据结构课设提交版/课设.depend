@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1550709336 source:d:\新建文件夹\课设 - 副本 (2) - 副本\cnfparser.c
+	<stdio.h>
+	<stdlib.h>
+	"cnfparser.h"
+
+1550676185 d:\新建文件夹\课设 - 副本 (2) - 副本\solver.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<math.h>
+	"cnfparser.h"
+
+1550709413 d:\新建文件夹\课设 - 副本 (2) - 副本\cnfparser.h
+
+1550672688 source:d:\新建文件夹\课设 - 副本 (2) - 副本\display.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cnfparser.c"
+	"Sudoku.c"
+
+1550709336 d:\新建文件夹\课设 - 副本 (2) - 副本\cnfparser.c
+	<stdio.h>
+	<stdlib.h>
+	"cnfparser.h"
+
+1550392891 d:\新建文件夹\课设 - 副本 (2) - 副本\sudoku.c
+	<stdio.h>
+
+1550676185 source:d:\新建文件夹\课设 - 副本 (2) - 副本\solver.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<math.h>
+	"cnfparser.h"
+
+1550392891 source:d:\新建文件夹\课设 - 副本 (2) - 副本\sudoku.c
+	<stdio.h>
+

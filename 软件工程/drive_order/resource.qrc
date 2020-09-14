@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>login_background.png</file>
+        <file>apply_welcome.png</file>
+        <file>login_user.png</file>
+        <file>窗口图标.png</file>
+        <file>汽车背景.jpg</file>
+        <file>背景3.jpg</file>
+        <file>背景4.png</file>
+        <file>背景5.png</file>
+        <file>背景6.png</file>
+        <file>背景7.png</file>
+        <file>背景8.png</file>
+        <file>背景9.png</file>
+        <file>背景10.png</file>
+    </qresource>
+</RCC>

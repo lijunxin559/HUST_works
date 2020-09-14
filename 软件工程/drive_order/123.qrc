@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>login_background.png</file>
+        <file>apply_welcome.png</file>
+        <file>login_user.png</file>
+    </qresource>
+</RCC>
